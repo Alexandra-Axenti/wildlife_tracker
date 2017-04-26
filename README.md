@@ -1,3 +1,10 @@
+# wildlife_tracker
+An app that allows forest rangers to report wildlife sightings.
+
+
+
+
+
 # README
 
 This README would normally document whatever steps are necessary to get the
