@@ -1,0 +1,19 @@
+<h4>Environmental impact study based on rangers' reports of wildlife sightings in the forests of virgin Douglas fir near Portland.</h4>
+
+<% if @animals.any? %>
+<div>All specimens reported so far:</div>
+
+<ul>
+  <% @animals.each do |animal| %>
+    <li><%= link_to animal.name, animal_path(animal) %></li>
+  <% end %>
+</ul>
+<% else %>
+
+<div>Please add a specimen first</div>
+
+<% end %>
+
+<hr>
+
+<button type="submit" class="btn btn-deafult" name="button"><%= link_to "Add a New Specimen", new_animal_path %></button>
